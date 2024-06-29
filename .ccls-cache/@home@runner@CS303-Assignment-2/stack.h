@@ -13,15 +13,18 @@ private:
   vector<Item_Type> stack;
 
 public:
-  bool empty() const { // function to check if stack is empty
+  // function to check if stack is empty
+  bool empty() const { 
     return stack.empty();
   }
 
-  void push(const Item_Type& item){ // function to push an item onto the stack
+  // function to push an item onto the stack
+  void push(const Item_Type& item){ 
     stack.push_back(item); 
   }
 
-  bool remove(size_t index) { 
+  // function to remove an item from the stack by a given index
+  bool remove(size_t index) {  
     if (stack.empty()){ 
       throw out_of_range("Can't pop from an empty stack");
     }
@@ -32,7 +35,8 @@ public:
     return true;
   }
 
-  Item_Type top() const {
+  // Returns the top element of the stack
+  Item_Type top() const { 
     if (stack.empty()){
       throw out_of_range("Top is not there, aka empty stack");
     }

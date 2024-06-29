@@ -145,7 +145,7 @@ void SingleLinkedList<Item_Type>::back() const {
 
 template<typename Item_Type>
 bool SingleLinkedList<Item_Type>::empty() const {
-  if (head == nullptr) {
+  if (head == nullptr) { // If the head is null, aka the has to mean the list is empty 
     cout << "True" << endl;
     return true;
   }

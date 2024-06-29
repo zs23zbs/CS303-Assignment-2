@@ -26,7 +26,9 @@ public:
   void print_list() const; // Print the list to check
 
   void push_front(const Item_Type& value); // Add an element to the front of the list 
+
   void push_back(const Item_Type& value); // Add an element to the back of the list
+
   void pop_front(); // Remove the first element of the list
 
   void pop_back(); // Remove the last element of the list

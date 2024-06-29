@@ -1,5 +1,5 @@
 #include "LinkedList.h"
-#include "stack.h" // Everything is working so far, just need to make program
+#include "stack.h"
 #include <iostream>
 
 using namespace std;
